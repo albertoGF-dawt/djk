@@ -83,6 +83,23 @@ body {
     margin: auto;
 }
 
+.hero li {
+    color: #94a3b8;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#about-contact {
+    color: white;
+}
+
+.hero h3 {
+    color: #38bdf8;
+    margin-top: 30px;
+}
+
 /* SERVICES */
 .services {
     padding: 70px 0;
