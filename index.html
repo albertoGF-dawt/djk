@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Agencia Web</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <!-- Header / Navegación -->
     <header class="header">
         <div class="container">
             <h1 class="logo-letras">atheigh</h1>
@@ -19,30 +19,35 @@
             <nav class="nav">
                 <a href="#servicios">Servicios</a>
                 <a href="#portfolio">Portafolio</a>
+                <a href="#direccion">Dirección</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
             <h2>Diseño y Desarrollo Web a Medida</h2>
-            <p>Somos un equipo creativo que mezcla diseño digital con soluciones eficaces y personalizadas para tu
-                proyecto.</p>
+            <p>
+                Somos un equipo creativo que mezcla diseño digital con soluciones eficaces y personalizadas.
+            </p>
         </div>
     </section>
 
     <section id="servicios" class="services">
         <div class="main">
             <h3>Nuestros Servicios</h3>
+
             <div class="cards">
                 <div class="card">
                     <h4>Desarrollo Web</h4>
                     <p>Creación de sitios web intuitivos y fáciles de gestionar.</p>
                 </div>
+
                 <div class="card">
                     <h4>Diseño UI/UX</h4>
                     <p>Diseños visuales atractivos enfocados en usabilidad.</p>
                 </div>
+
                 <div class="card">
                     <h4>Mantenimiento & Soporte</h4>
                     <p>Actualizaciones y soporte continuo para tu web.</p>
@@ -51,30 +56,119 @@
         </div>
     </section>
 
-    <!-- Portafolio -->
     <section id="portfolio" class="portfolio">
         <h3>Trabajos Recientes</h3>
 
-        <div class="project1">Proyecto 1 toyota</div>
-        <div>
-        <img class="project1img" src="imgs/image.png" alt="">
-</div>
-        <div class="project2">Proyecto 2
-            <img src="" alt="">
+        <div class="projects">
+
+            <div class="project">
+                <p>Proyecto Toyota</p>
+                <div class="image-wrapper">
+                    <img src="imgs/image.png" alt="Toyota">
+                    <div class="blue-overlay">
+                        <h4>Landing Toyota</h4>
+                        <p>Diseño UI + Desarrollo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Proyecto Biblioteca</p>
+                <div class="image-wrapper">
+                    <img src="imgs/biblioteca.webp" alt="Biblioteca">
+                    <div class="blue-overlay">
+                        <h4>Biblioteca ULPGC</h4>
+                        <p>Mantenimiento Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <p>Proyecto Palm</p>
+                <div class="image-wrapper">
+                    <img src="imgs/Palm.webp" alt="Palm">
+                    <div class="blue-overlay">
+                        <h4>Palm Beach</h4>
+                        <p>Diseño UI + Desarrollo</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="project3">Proyecto 3
-            <img src="" alt="">
+    </section>
+    <section id="presupuesto" class="budget">
+        <div class="container">
+            <div class="budget-text">
+                <h3>Solicita tu Presupuesto</h3>
+                <p>Rellena el formulario y nos pondremos en contacto contigo con una propuesta personalizada.</p>
+            </div>
+
+            <form class="budget-form" id="budgetForm">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Servicios que Solicitas</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="service[]" value="desarrollo-web"> Desarrollo Web</label>
+                        <label><input type="checkbox" name="service[]" value="diseno-uiux"> Diseño UI/UX</label>
+                        <label><input type="checkbox" name="service[]" value="mantenimiento-soporte"> Mantenimiento &
+                            Soporte</label>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="message">Detalles del Proyecto</label>
+                    <textarea id="message" name="message" placeholder="Describe tu proyecto" rows="5"
+                        required></textarea>
+                </div>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
         </div>
-        </div>
+    </section>
+    <section id="direccion" class="direccion">
+        <div class="container direccion-container">
+            <!-- Texto -->
+            <div class="direccion-text">
+                <h3>Nuestra Dirección</h3>
+                <p><strong>Ateigh Web Design</strong></p>
+                <p>Av. José Mesa y López, 81, Local 22/23</p>
+                <p>35010 Las Palmas de Gran Canaria, Las Palmas, Spain</p>
+                <p>ateigh.com</p>
+                <p>Teléfono: +34 828 029 349</p>
+            </div>
+
+            <!-- Mapa -->
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.123456789!2d-15.4321!3d28.1234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xabcdef123456!2sAv.+Jos%C3%A9+Mesa+y+L%C3%B3pez+81%2C+35010+Las+Palmas+de+Gran+Canaria!5e0!3m2!1ses!2ses!4v0000000000000"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </section>
 
 
-    <!-- Footer -->
+
+
+
     <footer class="footer">
         <p>Síguenos:</p>
-        <p><a href="#">LinkedIn</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
-        <p>© 2026 Mi Agencia Web</p>
+        <p>
+            <a href="#">LinkedIn</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+        <p>© 2026 Ateigh Web Design</p>
     </footer>
 
 </body>
